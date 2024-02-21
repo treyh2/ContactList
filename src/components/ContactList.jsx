@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import './'
+import ContactRow from './ContactRow';
 
 export default function ContactList () {
   
@@ -27,7 +27,9 @@ export default function ContactList () {
         <td>Phone</td>
       </tr>
       {
-        // Map over data here h1
+        contacts.map((contact) => {
+          return <ContactRow key = {contact.id} contact={contact} />;
+        })
       }
     </tbody>
    </table>
