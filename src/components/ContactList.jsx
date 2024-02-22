@@ -34,9 +34,7 @@ export default function ContactList({ setSelectedContactId }) {
       </thead>
       <tbody>
         <tr>
-          <td>Name</td>
-          <td>Email</td>
-          <td>Phone</td>
+          <td>Names:</td>
         </tr>
         {contacts.map((contact) => (
           <ContactRow key={contact.id} contact={contact} setSelectedContactId={setSelectedContactId} />
@@ -45,4 +43,3 @@ export default function ContactList({ setSelectedContactId }) {
     </table>
   );
 }
-

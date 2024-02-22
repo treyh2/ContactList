@@ -1,7 +1,7 @@
 // App.jsx
 import './index.css'
 import React, { useState } from 'react';
-import SelectedContact from './components/SelectedContent';
+import SelectedContact from './components/SelectedContact';
 import ContactList from './components/ContactList';
 
 export default function App() {
@@ -16,7 +16,3 @@ export default function App() {
     </>
   );
 }
-
-
-
-
